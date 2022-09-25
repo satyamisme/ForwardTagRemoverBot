@@ -8,14 +8,14 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 LOGGER = logging.getLogger(__name__)
 
 class Config(object):
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    BOT_USERNAME = os.environ.get('BOT_USERNAME','')
+    APP_ID = int(os.environ.get("APP_ID", 19987622))
+    API_HASH = os.environ.get("API_HASH", "00d42b460cef01c13d97dad1f417194e")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5759112488:AAE6RkDtm5SenOJ7PekSfOjJqPrTfNAO9Q8")
+    BOT_USERNAME = os.environ.get('BOT_USERNAME','@genesisaiofwdtagbot')
     if not BOT_USERNAME.startswith('@'): BOT_USERNAME = '@' + BOT_USERNAME # bu satıra dokunmayın.
     SEND_AS_REPLY = int(os.environ.get("SEND_AS_REPLY", "0"))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", '')
-    CHANNEL_OR_CONTACT = os.environ.get("CHANNEL_OR_CONTACT", 'HuzunluArtemis')
+    CHANNEL_OR_CONTACT = os.environ.get("CHANNEL_OR_CONTACT", '@satyamisme')
     JOIN_CHANNEL_STR = os.environ.get('JOIN_CHANNEL_STR',
         "Merhaba / Hi {}\n\n" + \
         "🇬🇧 First subscribe my channel from button, then send /start again.\n" + \
